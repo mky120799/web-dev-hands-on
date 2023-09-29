@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change HTML with innerHTML</title>
+</head>
+<body>
+    <div id="myElement">
+        <p>This is <strong><div>hola banzo </div>an</strong> example.</p>
+    </div>
+
+    <script>
+        var element = document.getElementById('myElement');
+
+        // Change the <p> tag to a <div> tag using innerHTML
+        element.innerText = '<div>This is Not<strong> an</strong> example.</div>';
+        console.log(element);
+    </script>
+</body>
+</html>
